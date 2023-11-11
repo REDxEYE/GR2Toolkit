@@ -5,8 +5,8 @@ from typing import Optional
 
 import numpy as np
 
-from file_utils import MemoryBuffer, Readable, Buffer, WritableMemoryBuffer
-from granny2_wrapper import Granny2Native
+from .file_utils import MemoryBuffer, Readable, Buffer, WritableMemoryBuffer
+from .granny2_wrapper import Granny2Native
 
 LE64MAGIC = b'\xe5\x9bI^oc\x1f\x14\x1e\x13\xeb\xa9\x90\xbe\xed\xc4'
 LE64MAGIC2 = b'\xe5/J\xe1o\xc2\x8a\xee\x1e\xd2\xb4L\x90\xd7U\xaf'

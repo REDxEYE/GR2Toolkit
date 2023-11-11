@@ -6,7 +6,7 @@ from mathutils import Vector, Matrix, Quaternion
 from pathlib import Path
 import numpy as np
 
-from granny2 import deserialize_granny2_file, Transform
+from .granny2 import deserialize_granny2_file, Transform
 
 
 def import_model(path: Path, mega_arm: Optional[bpy.types.Object] = None):

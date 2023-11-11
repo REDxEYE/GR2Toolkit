@@ -1,3 +1,8 @@
+from pathlib import Path
+
+from .import_model import import_model
+
+
 def plugin_init():
     pass
 
@@ -7,7 +12,10 @@ def gr2_init():
 
 
 def gr2_load(operator, filepath: str, files: list[str]):
-    pass
+    base_path = Path(filepath).parent
+    for file in files:
+        import_model(base_path / file, None)
+    return {"FINISHED"}
 
 
 plugin_info = {
